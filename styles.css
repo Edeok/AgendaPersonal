@@ -36,17 +36,17 @@ select {
 }
 
 button {
-    width: 100%;
+    width: 20%;
     padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
-    font-size: 14px; /* Aumentar el tamaño de fuente */
+    font-size: 15px; /* Aumentar el tamaño de fuente */
     background-color: #007bff;
     color: #fff;
     border: 1px solid #2e3e50;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: center; /* Centrar todo el contenido horizontalmente */
-    margin: 5px auto; /* Centrar horizontalmente y agregar espacio entre los botones */
-    display: block; /* Convertir a bloque para que ocupe el ancho completo */
+    margin: 10px; /* Centrar horizontalmente y agregar espacio entre los botones */
+   
 }
 
 button:hover {
