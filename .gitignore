@@ -1,0 +1,17 @@
+# Ignorar archivos y directorios generados por Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Ignorar archivos de dependencias específicos de npm
+/.pnp
+.pnp.js
+
+# Ignorar dependencias instaladas via npm
+/.npm
+/.yarn
+/yarn.lock
+
+# Ignorar directorio específico de dependencias en proyecto Yarn 2
+.pnp/

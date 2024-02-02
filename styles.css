@@ -15,8 +15,8 @@ h1 {
 
 .form-group1 {
     margin-bottom: 15px;
-   /* Cambiado para añadir espacio entre los botones */
-display: inline-block; /* Hace que los botones se muestren en línea */
+    /* Cambiado para añadir espacio entre los botones */
+    display: inline-block; /* Hace que los botones se muestren en línea */
 }
 
 label {
@@ -36,22 +36,22 @@ select {
 }
 
 button {
-width: 200px; /* Ancho ajustable según tu preferencia */
-padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
-font-size: 14px; /* Aumentar el tamaño de fuente */
-background-color: #007bff;
-color: #fff;
-border: 1px solid #2e3e50;
-border-radius: 5px;
-cursor: pointer;
-text-align: center; /* Centrar todo el contenido horizontalmente */
-margin: 5px; /* Cambiado para añadir espacio entre los botones */
-display: inline-block; /* Hace que los botones se muestren en línea */
+    width: 100%;
+    padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
+    font-size: 14px; /* Aumentar el tamaño de fuente */
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #2e3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Centrar todo el contenido horizontalmente */
+    margin: 5px auto; /* Centrar horizontalmente y agregar espacio entre los botones */
+    display: block; /* Convertir a bloque para que ocupe el ancho completo */
 }
 
 button:hover {
-background-color: #0056b3;
-border-color: #0056b3;
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 
@@ -68,35 +68,7 @@ ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
-button#addTaskButton {
-width: 300px; /* Ancho ajustable según tu preferencia */
-margin: 20px auto; /* Centrar horizontalmente y agregar espacio superior e inferior */
-padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
-font-size: 14px; /* Aumentar el tamaño de fuente */
-background-color: #007bff;
-color: #fff;
-border: 1px solid #2e3e50;
-border-radius: 5px;
-cursor: pointer;
-text-align: center; /* Centrar todo el contenido horizontalmente */
-margin-left: 600px;
-}
-
-button#addTaskButton:hover {
-background-color: #0056b3;
-border-color: #0056b3;
-}
-
-
-
-.task-text {
-    font-size: 18px;
-}
-
 .task-buttons button {
-    display: block;
     margin-top: 5px;
     border-radius: 3px;
 }
@@ -171,4 +143,12 @@ border-color: #0056b3;
 
 .task:nth-child(odd) .task-buttons button:nth-child(7) {
     background-color: #f1c40f;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    button {
+        width: calc(50% - 10px);
+        margin: 5px auto;
+    }
 }
