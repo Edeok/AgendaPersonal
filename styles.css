@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group1 {
+    margin-bottom: 15px;
+   /* Cambiado para añadir espacio entre los botones */
+display: inline-block; /* Hace que los botones se muestren en línea */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+width: 200px; /* Ancho ajustable según tu preferencia */
+padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
+font-size: 14px; /* Aumentar el tamaño de fuente */
+background-color: #007bff;
+color: #fff;
+border: 1px solid #2e3e50;
+border-radius: 5px;
+cursor: pointer;
+text-align: center; /* Centrar todo el contenido horizontalmente */
+margin: 5px; /* Cambiado para añadir espacio entre los botones */
+display: inline-block; /* Hace que los botones se muestren en línea */
+}
+
+button:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button#addTaskButton {
+width: 300px; /* Ancho ajustable según tu preferencia */
+margin: 20px auto; /* Centrar horizontalmente y agregar espacio superior e inferior */
+padding: 10px 20px; /* Aumentar el padding para hacerlo más grande */
+font-size: 14px; /* Aumentar el tamaño de fuente */
+background-color: #007bff;
+color: #fff;
+border: 1px solid #2e3e50;
+border-radius: 5px;
+cursor: pointer;
+text-align: center; /* Centrar todo el contenido horizontalmente */
+margin-left: 600px;
+}
+
+button#addTaskButton:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+
+
+
+.task-text {
+    font-size: 18px;
+}
+
+.task-buttons button {
+    display: block;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.task-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.task-date-time {
+    font-style: italic;
+    color: #888;
+}
+
+.task-editor {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-editor.active {
+    display: block;
+}
+
+/* Modificaciones para los botones específicos */
+.button.delete-button,
+.button.edit-button,
+.button.mark-read-button {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover sobre los botones específicos */
+.button.edit-button:hover,
+.button.mark-read-button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo para los botones específicos en cada tarea */
+.task:nth-child(odd) .task-buttons button {
+    background-color: #e74c3c;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(1) {
+    background-color: #e74c3c;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(2) {
+    background-color: #f39c12;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(3) {
+    background-color: #2ecc71;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(4) {
+    background-color: #3498db;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(5) {
+    background-color: #9b59b6;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(6) {
+    background-color: #34495e;
+}
+
+.task:nth-child(odd) .task-buttons button:nth-child(7) {
+    background-color: #f1c40f;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+   </head>
+<body>
+    <h1>Agenda Personal</h1>
+   
+    <div class="form-group">
+        <label for="taskInput">Tarea</label>
+        <input type="text" id="taskInput" placeholder="Agregar tarea...">
+    </div>
+    <div class="form-group1">
+        <label for="taskDeadlineInput">Fecha y Hora</label>
+        <input type="datetime-local" id="taskDeadlineInput" placeholder="Seleccionar fecha y hora...">
+    </div>
+    <div class="form-group1">
+        <label for="categorySelect">Categoría</label>
+        <select id="categorySelect">
+            <option value="trabajo">Trabajo</option>
+            <option value="personal">Personal</option>
+            <option value="estudio">Estudio</option>
+            <!-- Agrega otras opciones según tus necesidades -->
+        </select>
+    </div>
+    <div class="form-group1">
+        <label for="prioritySelect">Prioridad</label>
+        <select id="prioritySelect">
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+    </div>
+    <button id="addTaskButton" onclick="addTask()">Agregar</button>
+
+
+    <ul id="taskList"></ul>
+
+    <div id="taskEditor" class="task-editor">
+        <input type="text" id="editTaskInput" class="task-input">
+        <input type="text" id="newTaskInput" class="task-input" placeholder="Editar nueva tarea...">
+        <input type="datetime-local" id="taskDeadline" class="task-input">
+        <button onclick="saveTask()" class="task-buttons">Guardar</button>
+        <button onclick="cancelEdit()" class="task-buttons">Cancelar</button>
+    </div>
+
+    <script src="agenda.js"></script>
+</body>
+</html>
